@@ -12,9 +12,8 @@ SET UP
 
 Structure
 1. app -- complied project
-2. assets/scss -- compiled assets
-3. dev -- compose typescript, logic etc
+2. assets -- dev, scss, image etc.
+3. dev -- for developemnt project etc. 
    app.components.ts -- main compontent
    boot.ts -- run the compiled project
-4. node_module --- packages
-5. src -- holds compiled css files
+4. src -- holds compiled css files
