@@ -1,0 +1,49 @@
+
+<form class="details" #myForm="ngForm" (ngSubmit)="onSubmits()">
+  <div class="inputwrapper">
+    <span>First Name:</span>
+    <input type="text" 
+      name="firstname" 
+      id="first-name"
+      ngControl="firstname"
+      [(ngModel)]="newContact.firstname"
+      required
+      #firstname="ngForm"
+      >
+      <h5 *ngIf="!firstname.valid">Hey first name is not valid</h5>
+  </div>
+
+  <div class="inputwrapper">
+    <span>Last name:</span> 
+    <input type="text" 
+      name="lastname" 
+      id="last-name" 
+      ngControl="lasname"
+      [(ngModel)]="newContact.lastname"
+      required>
+  </div>
+
+  <div class="inputwrapper">
+    <span>Phone:</span>
+    <input type="text" 
+      name="phone" 
+      id="phone"
+      ngControl="phone"
+      [(ngModel)]="newContact.phone"
+      required>
+  </div>
+
+  <div class="inputwrapper">
+    <span>Email:</span> 
+    <input type="text" 
+      name="email" 
+      id="email"
+      ngControl="email"
+      [(ngModel)]="newContact.email"
+      required>
+  </div>
+
+  <button type="submit" [disabled]="!myForm.valid">
+    Create Contact
+   </button>
+</form>

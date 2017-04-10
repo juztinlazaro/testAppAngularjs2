@@ -1,0 +1,55 @@
+ul {
+  list-style: none;
+  margin: 16px 0px;
+  padding: 0px;
+}
+
+li {
+  cursor: pointer;
+  transition: padding 0.3s;
+  &:hover {
+  padding-left: 8px;
+  color: #223dcb;
+  font-weight: bold;
+  border-left: 3px solid #233dcb;
+  }
+}
+
+.is-awsome {
+  color: red;
+  font-size: 50px;
+}
+
+.clicked {
+  color: red;
+}
+
+.inputwrapper {
+  margin-bottom: 20px;
+}
+
+.inputwrapper span {
+  display: inline-block;
+  width: 90px;
+  color: blue;
+}
+
+.ng-invalid {
+  border: 1px solid red;
+}
+
+
+.parent input {
+  margin-bottom: 10px;
+}
+
+.parent {
+  background-color: #EBEBEB;
+  padding: 30px 50px;
+}
+
+.child {
+  background-color: #AAC0E2;
+  padding: 40px;
+  margin: 10px;
+}

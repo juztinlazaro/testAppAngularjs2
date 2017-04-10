@@ -1,0 +1,12 @@
+<div>
+  <ul>
+    <li *ngFor="#contact of contacts"
+      (click)="onSelect(contact)"
+      [class.clicked]="selectedContact === contact">
+<!--       <input [(ngModel)]="contact.firstname" type="text" name="something"> -->
+      <h5>Person: {{contact.firstname}} {{contact.lastname | uppercase}}</h5>
+    </li>
+  </ul>
+</div>
+
+<contact *ngIf="selectedContact !== null" [contact]="selectedContact"></contact>
