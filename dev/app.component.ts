@@ -4,11 +4,15 @@ import { RouteConfig } from 'angular2/router';
 
 import { ContactListComponent } from './contact/contact-list.component';
 import { NewContactComponent } from './contact/new-contact.component';
+
 import { HTTPTestComponent } from './http-test.component';
 import { PipesComponent } from './common/pipes.component';
 import { AboutComponent } from './common/about.component';
 import { ParentComponent } from './common/parent.component';
+import { TestComponent } from './common/test.component';
+
 import { ProductViewComponent } from './product/product-view.component';
+
 
 @Component({
     selector: 'my-app',
@@ -22,6 +26,7 @@ import { ProductViewComponent } from './product/product-view.component';
           <a [routerLink]="['Pipes']"> Pipes TEST </a>
           <a [routerLink]="['InputOutput']"> Inputs and Outputs </a>
           <a [routerLink]="['Products']"> Products </a>
+          <a [routerLink]="['Test']"> Dependency Injection </a>
         </nav>
       </header>
       
@@ -76,6 +81,11 @@ import { ProductViewComponent } from './product/product-view.component';
     path: '/Products', 
     name: 'Products',  
     component: ProductViewComponent
+  },
+  {
+    path: '/depedencyinjection', 
+    name: 'Test',  
+    component: TestComponent
   }
 ])
 
